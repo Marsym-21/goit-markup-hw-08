@@ -1,0 +1,65 @@
+html{box-sizing: border-box;}
+*, *::before, *::after{box-sizing: inherit;}
+
+:root{
+--primary-color: #757575;
+--primary-title-color: #FFFFFF;
+--title-color:#212121;
+--effects-color:#2196F3;
+--footer-color:rgba(255, 255, 255, 0.6) ;
+--button-color:#2196F3;
+--body-color:#FFFFFF;
+--border-bottom:#ECECEC;
+--banner-color:#2F303A;
+--team-background-color:#F5F4FA;
+--image-content-border-color:#EEEEEE;
+--gradient-color:rgba(47, 48, 58, 0.4);
+--icon-color:#AFB1B8;
+--background-color-img-activity: rgba(47, 48, 58, 0.8);
+--transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.body-studio, .body-portfolio, .body-contacts{
+font-family: 'Roboto', sans-serif;
+background-color:var(--primary-title-color);
+color: var(--primary-color);
+
+margin: 0 auto;
+}
+
+img, svg{display: block;}
+
+h1, h2, h3, p{
+    margin: 0;
+}
+
+.visually-hidden{
+    position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.speciality__title, .speciality__name, .activity__title, .team__title, .list-title, .title, .title-image, .customer__title{
+ color:var(--title-color) ;
+}
+
+.menu-list, .contacts-list, .speciality__list, .activity__list, .team__list, .icons-box, .customer__list, .address__list, .list-icon, .portfolio__btn-menu, .image-menu
+{list-style: none;}
+
+.page-head a, .footer a, .image-menu__link{text-decoration:none;}
+
+.activity__title, .team__title, .customer__title{
+
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.17;
+ text-align: center;
+ letter-spacing: 0.03em;
+}

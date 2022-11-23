@@ -1,0 +1,46 @@
+.speciality{
+ padding-top: 94px;
+
+
+&__list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+&__item{
+    width: 270px;
+}
+
+&__item:not(:first-child){
+    margin-left: 30px;
+}
+
+&__icon{
+background-color: var(--team-background-color);
+
+height: 120px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+border-radius: 4px;
+margin-bottom: 30px;
+}
+
+&__name{
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
+margin-top: 0px;
+margin-bottom: 10px;
+}
+
+&__text{
+ font-size: 14px;
+  line-height: 1.7;
+  margin: 0px; 
+  letter-spacing: 0.03em;
+}}

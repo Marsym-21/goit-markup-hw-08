@@ -1,0 +1,23 @@
+.page-head{
+background-color: var(--body-color);
+border-bottom: 1px solid var(--border-bottom);
+
+}
+
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+&__head{
+    display: flex;
+    align-items:center;
+}}
+
+.site-nav{
+  @extend .&__head;
+
+& .menu-list__link--current{
+color: var(--effects-color);
+}}
