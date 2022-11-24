@@ -10,6 +10,14 @@
 		margin: 0;
 		padding: 0;
 
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 0;
+			padding: 0;
+		}
+
 		@media screen and (min-width: 1200px) {
 			display: flex;
 			margin: 0;
@@ -18,10 +26,21 @@
 	}
 
 	&__item {
+		@media screen and (min-width: 768px) {
+			width: calc((100% - 2 * 15px) / 2);
+		}
+
 		@media screen and (min-width: 1200px) {
 			width: 270px;
 		}
 	}
+
+	@media screen and (min-width: 768px) {
+		&__item:nth-child(-n + 2) {
+			margin-bottom: 30px;
+		}
+	}
+
 	@media screen and (max-width: 767px) {
 		&__item:not(:last-child) {
 			margin-bottom: 30px;
