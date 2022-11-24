@@ -1,23 +1,17 @@
-.page-head{
-background-color: var(--body-color);
-border-bottom: 1px solid var(--border-bottom);
-
+.page-head {
+	background-color: var(--body-color);
+	border-bottom: 1px solid var(--border-bottom);
 }
 
+.container__head {
+	display: flex;
+	align-items: center;
+}
 
-.container{
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+.site-nav {
+	@extend .container__head;
 
-&__head{
-    display: flex;
-    align-items:center;
-}}
-
-.site-nav{
-  @extend .&__head;
-
-& .menu-list__link--current{
-color: var(--effects-color);
-}}
+	& .menu-list__link--current {
+		color: var(--effects-color);
+	}
+}
