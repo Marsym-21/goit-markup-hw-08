@@ -9,9 +9,42 @@
 }
 
 .site-nav {
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		justify-content: space-between;
+	}
+
 	@extend .container__head;
 
 	& .menu-list__link--current {
 		color: var(--effects-color);
+	}
+
+	@media screen and (max-width: 767px) {
+		&__btn {
+			border: none;
+			background-color: var(--body-color);
+			color: var(--title-color);
+		}
+		&__btn:hover &__svg,
+		&__btn:focus &__svg {
+			color: var(--effects-color);
+			cursor: pointer;
+			transition-property: color;
+			transition-duration: 250ms;
+			transition-timing-function: var(--transition-timing-function);
+		}
+	}
+	&__svg {
+		fill: currentColor;
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: var(--transition-timing-function);
+	}
+
+	@media screen and (min-width: 768px) {
+		&__btn {
+			display: none;
+		}
 	}
 }

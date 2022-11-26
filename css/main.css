@@ -138,8 +138,47 @@ p {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .site-nav .menu-list__link--current {
   color: var(--effects-color);
+}
+@media screen and (max-width: 767px) {
+  .site-nav__btn {
+    border: none;
+    background-color: var(--body-color);
+    color: var(--title-color);
+  }
+  .site-nav__btn:hover .site-nav__svg, .site-nav__btn:focus .site-nav__svg {
+    color: var(--effects-color);
+    cursor: pointer;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: var(--transition-timing-function);
+            transition-timing-function: var(--transition-timing-function);
+  }
+}
+.site-nav__svg {
+  fill: currentColor;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--transition-timing-function);
+          transition-timing-function: var(--transition-timing-function);
+}
+@media screen and (min-width: 768px) {
+  .site-nav__btn {
+    display: none;
+  }
 }
 
 .logo {
@@ -153,6 +192,91 @@ p {
 }
 .logo__web {
   color: var(--effects-color);
+}
+
+.menu-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--title-color);
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-color);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.menu-toggle:hover .menu-toggle__icon-close, .menu-toggle:focus .menu-toggle__icon-close {
+  color: var(--effects-color);
+  cursor: pointer;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--transition-timing-function);
+          transition-timing-function: var(--transition-timing-function);
+}
+.menu-toggle__icon-close {
+  fill: currentColor;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--transition-timing-function);
+          transition-timing-function: var(--transition-timing-function);
+}
+@media (min-width: 768px) {
+  .menu-toggle .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--body-color);
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--title-color);
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .contacts-list__link, .menu-list__link {
@@ -173,6 +297,11 @@ p {
   margin: 0;
   padding: 0;
   margin-left: 93px;
+}
+@media screen and (max-width: 767px) {
+  .menu-list, .contacts-list {
+    display: none;
+  }
 }
 .menu-list__item {
   position: relative;
@@ -235,6 +364,11 @@ p {
 
 .contacts-list {
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    display: none;
+  }
 }
 .contacts-list__link {
   color: var(--primary-color);
