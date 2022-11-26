@@ -96,6 +96,7 @@
 
 .mobile-menu-contacts {
 	@extend %menu-list;
+	padding-bottom: 64px;
 
 	&__item:first-child {
 		padding-bottom: 32px;
@@ -107,7 +108,36 @@
 		text-decoration: none;
 		font-weight: 500;
 		font-size: 24px;
-		line-height: 28px;
+		line-height: 1.17;
 		letter-spacing: 0.02em;
+	}
+	&__link--mail {
+		color: var(--effects-color);
+		font-size: 34px;
+	}
+}
+.mobile-menu-social {
+	@extend %menu-list;
+	display: flex;
+	align-items: center;
+
+	&__item:not(:last-child) {
+		border-right: 1px solid rgba(33, 33, 33, 0.2);
+	}
+
+	&__link {
+		display: block;
+		color: var(--effects-color);
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+		text-transform: capitalize;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	&__link--first {
+		padding-left: 0;
 	}
 }
