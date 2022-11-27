@@ -94,6 +94,10 @@ p {
 .activity__title,
 .team__title,
 .customer__title {
+	@media screen and(max-width:1199px) {
+		font-size: 28px;
+	}
+
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;

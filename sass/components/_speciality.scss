@@ -1,5 +1,6 @@
 .speciality {
 	padding-top: 60px;
+	padding-bottom: 60px;
 
 	@media screen and (min-width: 1200px) {
 		padding-top: 94px;
@@ -67,6 +68,10 @@
 	}
 
 	&__name {
+		@media screen and(max-width:767px) {
+			text-align: center;
+		}
+
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 1.14;
