@@ -8,6 +8,7 @@
 		@media screen and(min-width:1200px) {
 			display: flex;
 			align-items: baseline;
+			justify-content: space-between;
 		}
 	}
 
@@ -28,10 +29,26 @@
 
 	&__right-side {
 		margin-top: 60px;
-		margin-bottom: 60px;
+
+		@media screen and(min-width:768px) {
+			margin: 0;
+		}
+
 		@media screen and(min-width:1200px) {
 			margin-left: 70px;
 			margin-right: auto;
+		}
+	}
+
+	&__tablet {
+		@media screen and(min-width:768px) and(max-width:1199px) {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		@media screen and(min-width:1200px) {
+			display: flex;
+			align-items: baseline;
 		}
 	}
 }
