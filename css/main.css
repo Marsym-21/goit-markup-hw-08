@@ -1295,18 +1295,24 @@ p {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.5);
-          transform: translate(-50%, -50%) scale(0.5);
+  -webkit-transform: translate(-15px, -93px) scale(0.5);
+          transform: translate(-15px, -93px) scale(0.5);
+}
+@media screen and (min-width: 1200px) {
+  .backdrop.is-hidden .modal {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+  }
 }
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
+  top: 93px;
+  left: 15px;
+  max-width: 450px;
+  max-height: 609px;
+  -webkit-transform: translate(-15px, -93px) scale(1);
+          transform: translate(-15px, -93px) scale(1);
   background-color: var(--body-color);
   border-radius: 4px;
   -webkit-transition-property: -webkit-transform;
@@ -1319,6 +1325,16 @@ p {
           transition-timing-function: var(--transition-timing-function);
   padding: 40px;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
 .modal__icon-vector {
   fill: currentColor;
 }
@@ -1330,7 +1346,7 @@ p {
   right: 8px;
   width: 30px;
   height: 30px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 50%;
   background-color: var(--body-color);
   padding: 8.5px;
@@ -1508,10 +1524,15 @@ p {
 }
 .checkbox__name {
   color: var(--primary-color);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   cursor: url("/images/finger.png"), pointer;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__name {
+    font-size: 14px;
+  }
 }
 .checkbox__input {
   position: absolute;

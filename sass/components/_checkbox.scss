@@ -7,7 +7,10 @@
 
 	&__name {
 		color: var(--primary-color);
-		font-size: 14px;
+		font-size: 12px;
+		@media screen and(min-width:1200px) {
+			font-size: 14px;
+		}
 		line-height: 1.71;
 		letter-spacing: 0.03em;
 		cursor: url("/images/finger.png"), pointer;
