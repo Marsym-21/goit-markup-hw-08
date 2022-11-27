@@ -486,14 +486,20 @@ p {
 .banner__title {
   color: var(--primary-title-color);
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .banner__title {
+    font-size: 44px;
+    width: 696px;
+  }
 }
 .banner__btn {
   background-color: var(--button-color);
@@ -515,8 +521,7 @@ p {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
-    background-image: url(/images/headder-banner@2x.jpg);
-    background-size: 480px 400px;
+    background-image: url(/images/headder-banner.jpg);
   }
 }
 .speciality {
@@ -1286,6 +1291,7 @@ p {
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   -webkit-transform: opacity;
@@ -1295,18 +1301,24 @@ p {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.5);
-          transform: translate(-50%, -50%) scale(0.5);
+  -webkit-transform: translate(-50%, 0) scale(0.5);
+          transform: translate(-50%, 0) scale(0.5);
+}
+@media screen and (min-width: 1200px) {
+  .backdrop.is-hidden .modal {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+  }
 }
 
 .modal {
   position: absolute;
   top: 93px;
-  left: 15px;
-  max-width: 450px;
-  max-height: 609px;
-  -webkit-transform: translate(-50%, -50% px) scale(1);
-          transform: translate(-50%, -50% px) scale(1);
+  left: 50%;
+  -webkit-transform: translate(-50%, 0) scale(1);
+          transform: translate(-50%, 0) scale(1);
+  min-width: 450px;
+  min-height: 609px;
   background-color: var(--body-color);
   border-radius: 4px;
   -webkit-transition-property: -webkit-transform;
@@ -1319,12 +1331,19 @@ p {
           transition-timing-function: var(--transition-timing-function);
   padding: 40px;
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 208px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     top: 50%;
     left: 50%;
     min-width: 528px;
     min-height: 581px;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 .modal__icon-vector {
