@@ -18,10 +18,7 @@
 	}
 
 	&.is-hidden .modal {
-		transform: translate(-15px, -93px) scale(0.5);
-		@media screen and(min-width:1200px) {
-			transform: translate(-50%, -50%) scale(0.5);
-		}
+		transform: translate(-50%, -50%) scale(0.5);
 	}
 }
 
@@ -37,10 +34,9 @@
 		left: 50%;
 		min-width: 528px;
 		min-height: 581px;
-		transform: translate(-50%, -50%);
 	}
 
-	transform: translate(-15px, -93px) scale(1);
+	transform: translate(-50%, -50%px) scale(1);
 
 	background-color: var(--body-color);
 	border-radius: 4px;

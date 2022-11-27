@@ -1295,14 +1295,8 @@ p {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-15px, -93px) scale(0.5);
-          transform: translate(-15px, -93px) scale(0.5);
-}
-@media screen and (min-width: 1200px) {
-  .backdrop.is-hidden .modal {
-    -webkit-transform: translate(-50%, -50%) scale(0.5);
-            transform: translate(-50%, -50%) scale(0.5);
-  }
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
 }
 
 .modal {
@@ -1311,8 +1305,8 @@ p {
   left: 15px;
   max-width: 450px;
   max-height: 609px;
-  -webkit-transform: translate(-15px, -93px) scale(1);
-          transform: translate(-15px, -93px) scale(1);
+  -webkit-transform: translate(-50%, -50% px) scale(1);
+          transform: translate(-50%, -50% px) scale(1);
   background-color: var(--body-color);
   border-radius: 4px;
   -webkit-transition-property: -webkit-transform;
@@ -1331,8 +1325,6 @@ p {
     left: 50%;
     min-width: 528px;
     min-height: 581px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
   }
 }
 .modal__icon-vector {
