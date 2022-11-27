@@ -531,7 +531,8 @@ p {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
-    background-image: url(/images/headder-banner.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hedder-banner@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hedder-banner@2x.jpg");
   }
 }
 .speciality {
@@ -768,6 +769,9 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 10px;
+}
+.team img {
+  width: 100%;
 }
 
 .icons-box {
@@ -1397,8 +1401,8 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, 0) scale(1);
           transform: translate(-50%, 0) scale(1);
-  max-width: calc(100% - 30px);
-  max-height: 609px;
+  min-width: 450px;
+  min-height: 609px;
   background-color: var(--body-color);
   border-radius: 4px;
   -webkit-transition-property: -webkit-transform;
@@ -1420,8 +1424,8 @@ p {
   .modal {
     top: 50%;
     left: 50%;
-    max-width: 528px;
-    max-height: 581px;
+    min-width: 528px;
+    min-height: 581px;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }

@@ -32,8 +32,8 @@
 	top: 93px;
 	left: 50%;
 	transform: translate(-50%, 0) scale(1);
-	max-width: calc(100% - 30px);
-	max-height: 609px;
+	min-width: 450px;
+	min-height: 609px;
 
 	@media screen and(min-width:768px) {
 		top: 208px;
@@ -42,8 +42,8 @@
 	@media screen and(min-width:1200px) {
 		top: 50%;
 		left: 50%;
-		max-width: 528px;
-		max-height: 581px;
+		min-width: 528px;
+		min-height: 581px;
 		transform: translate(-50%, -50%) scale(1);
 	}
 
