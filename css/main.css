@@ -260,8 +260,8 @@ p {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
 }
@@ -1397,8 +1397,8 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, 0) scale(1);
           transform: translate(-50%, 0) scale(1);
-  min-width: 450px;
-  min-height: 609px;
+  max-width: calc(100% - 30px);
+  max-height: 609px;
   background-color: var(--body-color);
   border-radius: 4px;
   -webkit-transition-property: -webkit-transform;
@@ -1420,8 +1420,8 @@ p {
   .modal {
     top: 50%;
     left: 50%;
-    min-width: 528px;
-    min-height: 581px;
+    max-width: 528px;
+    max-height: 581px;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
@@ -1499,7 +1499,7 @@ p {
   margin-bottom: 4px;
 }
 .lead-form__name:hover, .lead-form__name:focus {
-  cursor: url("../images/finger.png"), pointer;
+  cursor: url("/images/finger.png"), pointer;
 }
 
 .lead-form__input-box {
@@ -1529,10 +1529,11 @@ p {
 }
 .lead-form__input:hover, .lead-form__input:focus {
   border-color: var(--effects-color);
-  cursor: url("../images/finger.png"), pointer;
+  cursor: url("/images/finger.png"), pointer;
 }
 .lead-form__input:hover + .lead-form__icon, .lead-form__input:focus + .lead-form__icon {
   fill: var(--effects-color);
+  cursor: url("/images/finger.png"), pointer;
 }
 
 .lead-form__icon {
@@ -1548,7 +1549,7 @@ p {
 }
 .lead-form__icon:hover, .lead-form__icon:focus {
   fill: var(--effects-color);
-  cursor: url("../images/finger.png"), pointer;
+  cursor: url("/images/finger.png"), pointer;
 }
 
 .lead-form__textarea {
@@ -1594,7 +1595,7 @@ p {
 }
 .lead-form__textarea:hover, .lead-form__textarea:focus {
   border-color: var(--effects-color);
-  cursor: url("../images/finger.png"), pointer;
+  cursor: url("/images/finger.png"), pointer;
 }
 
 .checkbox {
