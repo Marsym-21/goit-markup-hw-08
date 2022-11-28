@@ -22,7 +22,7 @@
 
 	&:hover,
 	&:focus {
-		cursor: url("/images/finger.png"), pointer;
+		cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 	}
 }
 
@@ -54,13 +54,13 @@
 	&:hover,
 	&:focus {
 		border-color: var(--effects-color);
-		cursor: url("/images/finger.png"), pointer;
+		cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 	}
 
 	&:hover + .lead-form__icon,
 	&:focus + .lead-form__icon {
 		fill: var(--effects-color);
-		cursor: url("/images/finger.png"), pointer;
+		cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 	}
 }
 
@@ -75,7 +75,7 @@
 	&:hover,
 	&:focus {
 		fill: var(--effects-color);
-		cursor: url("/images/finger.png"), pointer;
+		cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 	}
 }
 
@@ -98,6 +98,6 @@
 	&:hover,
 	&:focus {
 		border-color: var(--effects-color);
-		cursor: url("/images/finger.png"), pointer;
+		cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 	}
 }

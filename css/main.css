@@ -531,8 +531,8 @@ p {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/headder-banner@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/headder-banner@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/headder-banner%402x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/headder-banner%402x.jpg);
   }
 }
 .speciality {
@@ -1503,7 +1503,7 @@ p {
   margin-bottom: 4px;
 }
 .lead-form__name:hover, .lead-form__name:focus {
-  cursor: url("/images/finger.png"), pointer;
+  cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 }
 
 .lead-form__input-box {
@@ -1533,11 +1533,11 @@ p {
 }
 .lead-form__input:hover, .lead-form__input:focus {
   border-color: var(--effects-color);
-  cursor: url("/images/finger.png"), pointer;
+  cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 }
 .lead-form__input:hover + .lead-form__icon, .lead-form__input:focus + .lead-form__icon {
   fill: var(--effects-color);
-  cursor: url("/images/finger.png"), pointer;
+  cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 }
 
 .lead-form__icon {
@@ -1553,7 +1553,7 @@ p {
 }
 .lead-form__icon:hover, .lead-form__icon:focus {
   fill: var(--effects-color);
-  cursor: url("/images/finger.png"), pointer;
+  cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 }
 
 .lead-form__textarea {
@@ -1599,7 +1599,7 @@ p {
 }
 .lead-form__textarea:hover, .lead-form__textarea:focus {
   border-color: var(--effects-color);
-  cursor: url("/images/finger.png"), pointer;
+  cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 }
 
 .checkbox {
@@ -1623,7 +1623,7 @@ p {
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  cursor: url("/images/finger.png"), pointer;
+  cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 }
 @media screen and (min-width: 1200px) {
   .checkbox__name {
@@ -1644,7 +1644,7 @@ p {
   overflow: hidden;
   border: 2px solid var(--title-color);
   border-radius: 2px;
-  cursor: url("/images/finger.png"), pointer;
+  cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
   margin-right: 7px;
 }
 .checkbox__input:checked + .checkbox__icon {
@@ -1656,5 +1656,5 @@ p {
 }
 .checkbox__link {
   color: var(--button-color);
-  cursor: url("/images/finger.png"), pointer;
+  cursor: url(https://raw.githubusercontent.com/Marsym-21/goit-markup-hw-08/main/images/finger.png), pointer;
 }/*# sourceMappingURL=main.css.map */
