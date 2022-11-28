@@ -57,8 +57,7 @@
 	}
 
 	&__content {
-		padding-top: 30px;
-		padding-bottom: 16px;
+		padding: 30px 32px;
 	}
 
 	&__name {
@@ -87,7 +86,8 @@
 
 .icons-box {
 	display: flex;
-	padding: 0px 32px 30px 32px;
+	margin-top: 16px;
+	padding: 0;
 	@media screen and(max-width:1199px) {
 		justify-content: center;
 	}

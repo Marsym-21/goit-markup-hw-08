@@ -542,6 +542,7 @@ p {
 @media screen and (min-width: 1200px) {
   .speciality {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .speciality__list {
@@ -751,8 +752,7 @@ p {
   }
 }
 .team__content {
-  padding-top: 30px;
-  padding-bottom: 16px;
+  padding: 30px 32px;
 }
 .team__name {
   color: var(--title-color);
@@ -778,7 +778,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px 32px 30px 32px;
+  margin-top: 16px;
+  padding: 0;
 }
 @media screen and (max-width: 1199px) {
   .icons-box {
@@ -940,9 +941,6 @@ p {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 .footer__logo {
@@ -1074,7 +1072,9 @@ p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    margin-left: auto;
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 .subscript__label {
@@ -1651,7 +1651,7 @@ p {
   background-color: var(--effects-color);
   background-size: contain;
   border-color: var(--effects-color);
-  background-image: url(../images/icon-check.svg);
+  background-image: url(/images/icon-check.svg);
   background-repeat: no-repeat;
 }
 .checkbox__link {
