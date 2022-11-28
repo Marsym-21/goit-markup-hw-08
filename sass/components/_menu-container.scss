@@ -37,6 +37,9 @@
 }
 
 .menu-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -66,7 +69,6 @@
 
 .mobile-menu {
 	@extend %menu-list;
-	margin-bottom: 320px;
 
 	&__link {
 		display: block;
@@ -81,7 +83,7 @@
 		transition-timing-function: var(--transition-timing-function);
 	}
 	&__item:not(:last-child) {
-		padding-bottom: 32px;
+		margin-bottom: 32px;
 	}
 
 	&__item:hover &__link,
@@ -96,7 +98,7 @@
 
 .mobile-menu-contacts {
 	@extend %menu-list;
-	padding-bottom: 64px;
+	margin-bottom: 0 auto;
 
 	&__item:first-child {
 		padding-bottom: 32px;
@@ -120,6 +122,7 @@
 	@extend %menu-list;
 	display: flex;
 	align-items: center;
+	margin-top: 0 auto;
 
 	&__item:not(:last-child) {
 		border-right: 1px solid rgba(33, 33, 33, 0.2);

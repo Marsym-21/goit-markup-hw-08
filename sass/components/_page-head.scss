@@ -25,6 +25,8 @@
 			border: none;
 			background-color: var(--body-color);
 			color: var(--title-color);
+			padding: 10px 0;
+			margin-left: auto;
 		}
 		&__btn:hover &__svg,
 		&__btn:focus &__svg {

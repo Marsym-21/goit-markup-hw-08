@@ -112,7 +112,6 @@ p {
 }
 
 .container {
-  max-width: 480px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -161,6 +160,8 @@ p {
     border: none;
     background-color: var(--body-color);
     color: var(--title-color);
+    padding: 10px 0;
+    margin-left: auto;
   }
   .site-nav__btn:hover .site-nav__svg, .site-nav__btn:focus .site-nav__svg {
     color: var(--effects-color);
@@ -189,7 +190,9 @@ p {
 }
 
 .logo {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: var(--title-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -245,6 +248,16 @@ p {
   }
 }
 .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -278,9 +291,6 @@ p {
   list-style: none;
 }
 
-.mobile-menu {
-  margin-bottom: 320px;
-}
 .mobile-menu__link {
   display: block;
   color: var(--title-color);
@@ -297,7 +307,7 @@ p {
           transition-timing-function: var(--transition-timing-function);
 }
 .mobile-menu__item:not(:last-child) {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 .mobile-menu__item:hover .mobile-menu__link, .mobile-menu__item:focus .mobile-menu__link {
   color: var(--effects-color);
@@ -308,7 +318,7 @@ p {
 }
 
 .mobile-menu-contacts {
-  padding-bottom: 64px;
+  margin-bottom: 0 auto;
 }
 .mobile-menu-contacts__item:first-child {
   padding-bottom: 32px;
@@ -334,6 +344,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0 auto;
 }
 .mobile-menu-social__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -501,14 +512,14 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .banner__title {
     font-size: 44px;
-    width: 696px;
+    max-width: 696px;
   }
 }
 .banner__btn {
@@ -695,7 +706,7 @@ p {
 }
 .team__title {
   margin: 0px;
-  margin-bottom: 30x;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .team__title {
@@ -974,9 +985,9 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -1385,8 +1396,8 @@ p {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, 0) scale(0.5);
-          transform: translate(-50%, 0) scale(0.5);
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
 }
 @media screen and (min-width: 1200px) {
   .backdrop.is-hidden .modal {
@@ -1397,10 +1408,10 @@ p {
 
 .modal {
   position: absolute;
-  top: 93px;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, 0) scale(1);
-          transform: translate(-50%, 0) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   min-width: 450px;
   min-height: 609px;
   background-color: var(--body-color);
@@ -1414,11 +1425,6 @@ p {
   -webkit-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
   padding: 40px;
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    top: 208px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
