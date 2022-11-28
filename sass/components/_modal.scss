@@ -32,8 +32,9 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(1);
-	min-width: 450px;
-	min-height: 609px;
+	width: 450px;
+	height: 609px;
+	margin: auto;
 
 	@media screen and(min-width:768px) {
 	}
@@ -41,8 +42,8 @@
 	@media screen and(min-width:1200px) {
 		top: 50%;
 		left: 50%;
-		min-width: 528px;
-		min-height: 581px;
+		width: 528px;
+		height: 581px;
 		transform: translate(-50%, -50%) scale(1);
 	}
 
