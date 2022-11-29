@@ -1670,8 +1670,8 @@ p {
 }
 .checkbox__icon {
   display: inline-block;
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
   overflow: hidden;
   border: 2px solid var(--title-color);
   border-radius: 2px;
