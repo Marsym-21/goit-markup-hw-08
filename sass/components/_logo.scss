@@ -12,4 +12,10 @@
 	&__web {
 		color: var(--effects-color);
 	}
+
+	@media screen and(max-width:1199px) {
+		&.footer__logo {
+			justify-content: center;
+		}
+	}
 }

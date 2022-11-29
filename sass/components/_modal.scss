@@ -19,7 +19,7 @@
 	}
 
 	&.is-hidden .modal {
-		transform: translate(-50%, -50%) scale(0.5);
+		transform: translate(-50%, -45px) scale(0.5);
 
 		@media screen and(min-width:1200px) {
 			transform: translate(-50%, -50%) scale(0.5);
@@ -29,21 +29,23 @@
 
 .modal {
 	position: absolute;
-	top: 50%;
+	top: 93px;
 	left: 50%;
-	transform: translate(-50%, -50%) scale(1);
-	width: 450px;
-	height: 609px;
+	transform: translate(-50%, -45px) scale(1);
 	margin: auto;
 
 	@media screen and(min-width:768px) {
+		top: 50%;
+		left: 50%;
+		max-width: 450px;
+		max-height: 609px;
 	}
 
 	@media screen and(min-width:1200px) {
 		top: 50%;
 		left: 50%;
-		width: 528px;
-		height: 581px;
+		max-width: 528px;
+		max-height: 581px;
 		transform: translate(-50%, -50%) scale(1);
 	}
 

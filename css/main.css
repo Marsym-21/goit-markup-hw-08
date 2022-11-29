@@ -203,6 +203,13 @@ p {
 .logo__web {
   color: var(--effects-color);
 }
+@media screen and (max-width: 1199px) {
+  .logo.footer__logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .menu-toggle {
   position: absolute;
@@ -503,6 +510,12 @@ p {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+@media screen and (max-width: 767px) {
+  .banner {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 .banner__title {
   color: var(--primary-title-color);
@@ -960,7 +973,7 @@ p {
 .footer__titel {
   color: var(--primary-title-color);
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
@@ -1013,6 +1026,11 @@ p {
 .address__link--office {
   color: var(--primary-title-color);
   padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .address__list {
+    text-align: start;
+  }
 }
 .address__item {
   font-size: 14px;
@@ -1396,8 +1414,8 @@ p {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.5);
-          transform: translate(-50%, -50%) scale(0.5);
+  -webkit-transform: translate(-50%, -45px) scale(0.5);
+          transform: translate(-50%, -45px) scale(0.5);
 }
 @media screen and (min-width: 1200px) {
   .backdrop.is-hidden .modal {
@@ -1408,12 +1426,10 @@ p {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  width: 450px;
-  height: 609px;
+  -webkit-transform: translate(-50%, -45px) scale(1);
+          transform: translate(-50%, -45px) scale(1);
   margin: auto;
   background-color: var(--body-color);
   border-radius: 4px;
@@ -1427,12 +1443,20 @@ p {
           transition-timing-function: var(--transition-timing-function);
   padding: 40px;
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    max-width: 450px;
+    max-height: 609px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    max-height: 581px;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
