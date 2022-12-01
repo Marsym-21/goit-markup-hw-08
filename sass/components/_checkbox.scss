@@ -25,6 +25,7 @@
 	}
 
 	&__icon {
+		position: relative;
 		display: inline-block;
 		min-width: 16px;
 		min-height: 15px;
@@ -39,8 +40,14 @@
 		background-color: var(--effects-color);
 		background-size: contain;
 		border-color: var(--effects-color);
-		background-image: url(../images/icon-check.svg);
-		background-repeat: no-repeat;
+		transition-property: background-color, border-color;
+		transition-duration: 250ms;
+		transition-timing-function: var(--transition-timing-function);
+	}
+
+	&__svg {
+		position: absolute;
+		top: 0;
 	}
 
 	&__link {

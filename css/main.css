@@ -1669,6 +1669,7 @@ p {
   margin: -1px;
 }
 .checkbox__icon {
+  position: relative;
   display: inline-block;
   min-width: 16px;
   min-height: 15px;
@@ -1682,8 +1683,16 @@ p {
   background-color: var(--effects-color);
   background-size: contain;
   border-color: var(--effects-color);
-  background-image: url(../images/icon-check.svg);
-  background-repeat: no-repeat;
+  -webkit-transition-property: background-color, border-color;
+  transition-property: background-color, border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--transition-timing-function);
+          transition-timing-function: var(--transition-timing-function);
+}
+.checkbox__svg {
+  position: absolute;
+  top: 0;
 }
 .checkbox__link {
   color: var(--button-color);
